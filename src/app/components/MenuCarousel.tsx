@@ -126,7 +126,7 @@ export function MenuCarousel() {
             className="font-playfair text-[#E81909] mb-4"
             style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700 }}
           >
-            Menu Favorit Kami
+            Menu Pilihan Kami
           </h2>
           <p className="text-[#5C8BB3] max-w-2xl mx-auto font-inter" style={{ fontSize: '1.125rem' }}>
             Pilihan dimsum terbaik dengan 2 cara penyajian: kukus dan goreng.
