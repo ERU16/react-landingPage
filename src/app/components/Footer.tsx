@@ -1,10 +1,10 @@
-import { Instagram, Phone } from 'lucide-react';
+import { Instagram, Phone } from "lucide-react";
 
 export function Footer() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -25,24 +25,13 @@ export function Footer() {
               </div>
             </div>
             <p className="text-[#F8CFD3] mb-4 font-inter text-xs sm:text-sm max-w-md leading-relaxed">
-              Nikmati kelezatan dimsum autentik yang dibuat dengan bahan-bahan pilihan dan resep tradisional. Setiap
-              gigitan menghadirkan cita rasa yang sempurna.
+              Nikmati kelezatan dimsum autentik yang dibuat dengan bahan-bahan pilihan dan resep tradisional. Setiap gigitan menghadirkan cita rasa yang sempurna.
             </p>
             <div className="flex gap-3">
-              <a
-                href="https://www.instagram.com/dimsum_teh_irma/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/15 hover:bg-[#E81909] p-2 hover:p-2.5 rounded-full transition-all"
-              >
+              <a href="https://www.instagram.com/dimsum_teh_irma/" target="_blank" rel="noopener noreferrer" className="bg-white/15 hover:bg-[#E81909] p-2 hover:p-2.5 rounded-full transition-all">
                 <Instagram size={18} className="sm:h-5 sm:w-5" />
               </a>
-              <a
-                href="https://wa.me/6281322227739"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/15 hover:bg-[#E81909] p-2 hover:p-2.5 rounded-full transition-all"
-              >
+              <a href="https://wa.me/6281322227739" target="_blank" rel="noopener noreferrer" className="bg-white/15 hover:bg-[#E81909] p-2 hover:p-2.5 rounded-full transition-all">
                 <Phone size={18} className="sm:h-5 sm:w-5" />
               </a>
             </div>
@@ -54,26 +43,17 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 font-inter text-xs sm:text-sm">
               <li>
-                <button
-                  onClick={() => scrollToSection('home')}
-                  className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors"
-                >
+                <button onClick={() => scrollToSection("home")} className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors">
                   Home
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('menu')}
-                  className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors"
-                >
+                <button onClick={() => scrollToSection("menu")} className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors">
                   Menu
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors"
-                >
+                <button onClick={() => scrollToSection("contact")} className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors">
                   Contact
                 </button>
               </li>
@@ -91,22 +71,12 @@ export function Footer() {
                 Jakarta Selatan, 12345
               </li>
               <li>
-                <a
-                  href="https://wa.me/6281322227739"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors break-all sm:break-normal"
-                >
+                <a href="https://wa.me/6281322227739" target="_blank" rel="noopener noreferrer" className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors break-all sm:break-normal">
                   +62 813-2222-7739
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/dimsum_teh_irma/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors break-all sm:break-normal"
-                >
+                <a href="https://www.instagram.com/dimsum_teh_irma/" target="_blank" rel="noopener noreferrer" className="text-[#FCBED6] hover:text-[#EDBF68] transition-colors break-all sm:break-normal">
                   @dimsum_teh_irma
                 </a>
               </li>

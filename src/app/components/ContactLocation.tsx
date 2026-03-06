@@ -1,4 +1,4 @@
-import { Phone, Instagram, MapPin, Clock } from 'lucide-react';
+import { Phone, Instagram, MapPin, Clock } from "lucide-react";
 
 export function ContactLocation() {
   return (
@@ -13,16 +13,10 @@ export function ContactLocation() {
               </span>
             </div>
           </div>
-          <h2
-            className="font-playfair text-[#E81909] mb-3 sm:mb-4"
-            style={{ fontSize: 'clamp(1.75rem, 4vw, 3rem)', fontWeight: 700 }}
-          >
+          <h2 className="font-playfair text-[#E81909] mb-3 sm:mb-4" style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", fontWeight: 700 }}>
             Hubungi Kami
           </h2>
-          <p
-            className="text-[#5C8BB3] max-w-2xl mx-auto font-inter px-2"
-            style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1.125rem)' }}
-          >
+          <p className="text-[#5C8BB3] max-w-2xl mx-auto font-inter px-2" style={{ fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}>
             Kami siap melayani pesanan Anda setiap hari
           </p>
         </div>
@@ -30,10 +24,7 @@ export function ContactLocation() {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-start">
           <div className="space-y-5 sm:space-y-6">
             <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all">
-              <h3
-                className="font-playfair text-[#E81909] mb-4 sm:mb-5 lg:mb-6"
-                style={{ fontSize: 'clamp(1.3rem, 4.5vw, 1.75rem)', fontWeight: 600 }}
-              >
+              <h3 className="font-playfair text-[#E81909] mb-4 sm:mb-5 lg:mb-6" style={{ fontSize: "clamp(1.3rem, 4.5vw, 1.75rem)", fontWeight: 600 }}>
                 Informasi Kontak
               </h3>
 
@@ -51,7 +42,7 @@ export function ContactLocation() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#E81909] hover:text-[#E50A6D] transition-colors font-inter break-all"
-                      style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1.125rem)' }}
+                      style={{ fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}
                     >
                       +62 813-2222-7739
                     </a>
@@ -71,7 +62,7 @@ export function ContactLocation() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#E81909] hover:text-[#E50A6D] transition-colors font-inter break-all"
-                      style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1.125rem)' }}
+                      style={{ fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}
                     >
                       @dimsum_teh_irma
                     </a>
@@ -86,7 +77,7 @@ export function ContactLocation() {
                     <div className="text-[#5C8BB3] mb-1 font-inter text-xs sm:text-sm" style={{ fontWeight: 600 }}>
                       Alamat
                     </div>
-                    <p className="text-[#E81909] font-inter" style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1.125rem)' }}>
+                    <p className="text-[#E81909] font-inter" style={{ fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}>
                       Jl. Raya Dimsum No. 123
                       <br />
                       Jakarta Selatan, 12345
@@ -102,7 +93,7 @@ export function ContactLocation() {
                     <div className="text-[#5C8BB3] mb-1 font-inter text-xs sm:text-sm" style={{ fontWeight: 600 }}>
                       Jam Operasional
                     </div>
-                    <div className="text-[#E81909] font-inter" style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1.125rem)' }}>
+                    <div className="text-[#E81909] font-inter" style={{ fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}>
                       <div>Senin - Jumat: 09.00 - 21.00</div>
                       <div>Sabtu - Minggu: 08.00 - 22.00</div>
                     </div>
@@ -173,10 +164,7 @@ export function ContactLocation() {
                   <div className="bg-white/95 backdrop-blur-sm px-3 sm:px-4 lg:px-6 py-2 sm:py-3 lg:py-4 rounded-lg sm:rounded-xl shadow-lg">
                     <div className="flex items-center justify-between gap-2">
                       <div className="min-w-0">
-                        <div
-                          className="text-[#E81909] font-playfair"
-                          style={{ fontWeight: 600, fontSize: 'clamp(0.9rem, 3.5vw, 1.125rem)' }}
-                        >
+                        <div className="text-[#E81909] font-playfair" style={{ fontWeight: 600, fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}>
                           Lokasi Kami
                         </div>
                         <div className="text-[#5C8BB3] text-xs font-inter">Klik pin untuk navigasi</div>
