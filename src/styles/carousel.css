@@ -13,7 +13,7 @@
   display: block;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4px 0;
 }
 
 .slick-list:focus {
@@ -42,7 +42,7 @@
 .slick-track:before,
 .slick-track:after {
   display: table;
-  content: '';
+  content: "";
 }
 
 .slick-track:after {
@@ -60,7 +60,7 @@
   min-height: 1px;
 }
 
-[dir='rtl'] .slick-slide {
+[dir="rtl"] .slick-slide {
   float: right;
 }
 
@@ -138,13 +138,13 @@
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
+  content: "\2022";
   text-align: center;
   opacity: 0.5;
-  color: #E50A6D;
+  color: #e50a6d;
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #E50A6D;
+  color: #e50a6d;
 }

@@ -1,8 +1,8 @@
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { MenuCarousel } from './components/MenuCarousel';
-import { ContactLocation } from './components/ContactLocation';
-import { Footer } from './components/Footer';
+import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { MenuCarousel } from "./components/MenuCarousel";
+import { ContactLocation } from "./components/ContactLocation";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
@@ -10,6 +10,15 @@ export default function App() {
       <style>{`
         body {
           font-family: 'Inter', sans-serif;
+          margin: 0;
+          overflow-x: hidden;
+        }
+
+        html,
+        body,
+        #root {
+          width: 100%;
+          max-width: 100%;
         }
         
         .font-playfair {
@@ -45,7 +54,7 @@ export default function App() {
 
         /* Slick carousel customization */
         .slick-dots {
-          bottom: -40px !important;
+          bottom: -38px !important;
         }
 
         .slick-dots li button:before {
@@ -57,8 +66,31 @@ export default function App() {
           color: #E50A6D !important;
           opacity: 1 !important;
         }
+
+        @media (max-width: 768px) {
+          .slick-dots {
+            bottom: -32px !important;
+          }
+
+          .slick-dots li {
+            width: 28px;
+            height: 28px;
+          }
+
+          .slick-dots li button {
+            width: 28px;
+            height: 28px;
+          }
+
+          .slick-dots li button:before {
+            font-size: 14px !important;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+          }
+        }
       `}</style>
-      
+
       <Navbar />
       <Hero />
       <MenuCarousel />

@@ -1,6 +1,6 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Slider from 'react-slick';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Slider from "react-slick";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface MenuItem {
   id: number;
@@ -16,62 +16,64 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     id: 1,
-    name: 'Dimsum Kukus/Goreng',
-    description: 'Dimsum kukus/Goreng lembut isi 5',
-    price: 'Rp 12.000',
-    image: 'https://images.unsplash.com/photo-1639119419756-d909653abbdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZHVtcGxpbmclMjBjbG9zZSUyMHVwfGVufDF8fHx8MTc3MjczNzQzMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    badge: 'Best Seller',
-    badgeColor: 'bg-[#E50A6D]',
-    badgeTextColor: 'text-white',
+    name: "Dimsum Kukus/Goreng",
+    description: "Dimsum kukus/Goreng lembut isi 5",
+    price: "Rp 12.000",
+    image:
+      "https://images.unsplash.com/photo-1639119419756-d909653abbdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZHVtcGxpbmclMjBjbG9zZSUyMHVwfGVufDF8fHx8MTc3MjczNzQzMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    badge: "Best Seller",
+    badgeColor: "bg-[#E50A6D]",
+    badgeTextColor: "text-white",
   },
   {
     id: 2,
-    name: 'Dimsum Kukus/Goreng',
-    description: 'Dimsum Kukus/Goreng lembut isi 10',
-    price: 'Rp 23.000',
-    image: 'https://images.unsplash.com/photo-1603894483228-9a3d10c32390?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaHJpbXAlMjBoYWthbyUyMGRpbXN1bXxlbnwxfHx8fDE3NzI3Mzc0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    badge: 'Favorite',
-    badgeColor: 'bg-[#EDBF68]',
-    badgeTextColor: 'text-[#E81909]',
+    name: "Dimsum Kukus/Goreng",
+    description: "Dimsum Kukus/Goreng lembut isi 10",
+    price: "Rp 23.000",
+    image:
+      "https://images.unsplash.com/photo-1603894483228-9a3d10c32390?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaHJpbXAlMjBoYWthbyUyMGRpbXN1bXxlbnwxfHx8fDE3NzI3Mzc0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    badge: "Favorite",
+    badgeColor: "bg-[#EDBF68]",
+    badgeTextColor: "text-[#E81909]",
   },
   {
     id: 3,
-    name: 'Dimsum Kukus/Goreng',
-    description: 'Dimsum Kukus/Goreng lembut isi 15',
-    price: 'Rp 33.000',
-    image: 'https://images.unsplash.com/photo-1763661195425-1e3cdd575eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVhbWVkJTIwYnVucyUyMGFzaWFuJTIwZm9vZHxlbnwxfHx8fDE3NzI3Mzc0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    badge: 'New Menu',
-    badgeColor: 'bg-[#5C8BB3]',
-    badgeTextColor: 'text-white',
+    name: "Dimsum Kukus/Goreng",
+    description: "Dimsum Kukus/Goreng lembut isi 15",
+    price: "Rp 33.000",
+    image:
+      "https://images.unsplash.com/photo-1763661195425-1e3cdd575eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVhbWVkJTIwYnVucyUyMGFzaWFuJTIwZm9vZHxlbnwxfHx8fDE3NzI3Mzc0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    badge: "New Menu",
+    badgeColor: "bg-[#5C8BB3]",
+    badgeTextColor: "text-white",
   },
   {
     id: 4,
-    name: 'Dimsum Kukus/Goreng',
-    description: 'Dimsum Kukus/Goreng lembut isi 20',
-    price: 'Rp 38.000',
-    image: 'https://images.unsplash.com/photo-1616110729547-8443944dc157?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMGR1bXBsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzcyNzM3NDM1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    badge: 'Favorite',
-    badgeColor: 'bg-[#EDBF68]',
-    badgeTextColor: 'text-[#E81909]',
+    name: "Dimsum Kukus/Goreng",
+    description: "Dimsum Kukus/Goreng lembut isi 20",
+    price: "Rp 38.000",
+    image:
+      "https://images.unsplash.com/photo-1616110729547-8443944dc157?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMGR1bXBsaW5nJTIwcGxhdGV8ZW58MXx8fHwxNzcyNzM3NDM1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    badge: "Favorite",
+    badgeColor: "bg-[#EDBF68]",
+    badgeTextColor: "text-[#E81909]",
   },
   {
     id: 5,
-    name: 'Dimsum Kukus/Goreng',
-    description: 'Dimsum Kukus/Goreng lembut isi 25',
-    price: 'Rp 48.000',
-    image: 'https://images.unsplash.com/photo-1768701544400-dfa8ca509d10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcHJpbmclMjByb2xsJTIwYXBwZXRpemVyfGVufDF8fHx8MTc3MjczNzQzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    badge: 'Best Seller',
-    badgeColor: 'bg-[#E50A6D]',
-    badgeTextColor: 'text-white',
+    name: "Dimsum Kukus/Goreng",
+    description: "Dimsum Kukus/Goreng lembut isi 25",
+    price: "Rp 48.000",
+    image:
+      "https://images.unsplash.com/photo-1768701544400-dfa8ca509d10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcHJpbmclMjByb2xsJTIwYXBwZXRpemVyfGVufDF8fHx8MTc3MjczNzQzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    badge: "Best Seller",
+    badgeColor: "bg-[#E50A6D]",
+    badgeTextColor: "text-white",
   },
 ];
 
 function NextArrow({ onClick }: { onClick?: () => void }) {
   return (
-    <button
-      onClick={onClick}
-      className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-[#E50A6D] p-3 rounded-full shadow-lg transition-all hover:scale-110"
-    >
+    <button onClick={onClick} className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-[#E50A6D] p-2.5 sm:p-3 rounded-full shadow-lg transition-all hover:scale-110">
       <ChevronRight size={24} />
     </button>
   );
@@ -79,10 +81,7 @@ function NextArrow({ onClick }: { onClick?: () => void }) {
 
 function PrevArrow({ onClick }: { onClick?: () => void }) {
   return (
-    <button
-      onClick={onClick}
-      className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-[#E50A6D] p-3 rounded-full shadow-lg transition-all hover:scale-110"
-    >
+    <button onClick={onClick} className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-[#E50A6D] p-2.5 sm:p-3 rounded-full shadow-lg transition-all hover:scale-110">
       <ChevronLeft size={24} />
     </button>
   );
@@ -108,47 +107,46 @@ export function MenuCarousel() {
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
         },
       },
     ],
   };
 
   return (
-    <section id="menu" className="py-20 bg-gradient-to-b from-[#F1F5F6] to-white">
+    <section id="menu" className="py-8 sm:py-16 lg:py-20 bg-gradient-to-b from-[#F1F5F6] to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2
-            className="font-playfair text-[#E81909] mb-4"
-            style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700 }}
-          >
+        <div className="text-center mb-5 sm:mb-12 lg:mb-16">
+          <h2 className="font-playfair text-[#E81909] mb-2 sm:mb-4" style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", fontWeight: 700 }}>
             Menu Pilihan Kami
           </h2>
-          <p className="text-[#5C8BB3] max-w-2xl mx-auto font-inter" style={{ fontSize: '1.125rem' }}>
+          <p className="text-[#5C8BB3] max-w-2xl mx-auto font-inter px-2" style={{ fontSize: "clamp(0.9rem, 3.5vw, 1.125rem)" }}>
             Pilihan dimsum terbaik dengan 2 cara penyajian: kukus dan goreng.
           </p>
         </div>
 
         {/* Carousel */}
-        <div className="relative px-8">
+        <div className="relative pb-12">
           <Slider {...settings}>
             {menuItems.map((item) => (
-              <div key={item.id} className="px-3">
-                <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div key={item.id} className="px-2 sm:px-3">
+                <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                   {/* Image */}
-                  <div className="relative h-64 overflow-hidden">
-                    <ImageWithFallback
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
+                  <div className="relative aspect-video sm:h-56 lg:h-64 overflow-hidden">
+                    <ImageWithFallback src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                     {/* Badge */}
                     {item.badge && (
-                      <div className={`absolute top-4 right-4 ${item.badgeColor} ${item.badgeTextColor ?? 'text-white'} px-4 py-1.5 rounded-full text-sm font-inter`} style={{ fontWeight: 600 }}>
+                      <div
+                        className={`absolute top-3 right-3 ${item.badgeColor} ${item.badgeTextColor ?? "text-white"} px-3 py-1 rounded-full text-xs font-inter`}
+                        style={{ fontWeight: 600 }}
+                      >
                         {item.badge}
                       </div>
                     )}
@@ -157,23 +155,22 @@ export function MenuCarousel() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
-                    <h3 className="font-playfair text-[#E81909] mb-2" style={{ fontSize: '1.5rem', fontWeight: 600 }}>
+                  <div className="p-3 sm:p-5 lg:p-6">
+                    <h3 className="font-playfair text-[#E81909] mb-1 text-base sm:text-xl lg:text-2xl truncate" style={{ fontWeight: 600 }}>
                       {item.name}
                     </h3>
-                    <p className="text-[#5C8BB3] mb-4 font-inter" style={{ fontSize: '0.875rem' }}>
+                    <p className="text-[#5C8BB3] mb-2 sm:mb-3 font-inter text-[11px] sm:text-sm sm:line-clamp-2 leading-snug">
                       {item.description}
                     </p>
-                    <div className="flex items-center justify-between">
-                      <div className="text-[#E50A6D] font-playfair" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="text-[#E50A6D] font-playfair text-base sm:text-xl lg:text-2xl" style={{ fontWeight: 700 }}>
                         {item.price}
                       </div>
                       <a
-                        href="https://wa.me/6281234567890"
+                        href="https://wa.me/6281322227739"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gradient-to-r from-[#E45A4D] to-[#E50A6D] text-white px-5 py-2 rounded-full hover:shadow-lg transition-all font-inter"
-                        style={{ fontWeight: 500, fontSize: '0.875rem' }}
+                        className="w-full sm:w-auto text-center bg-gradient-to-r from-[#E45A4D] to-[#E50A6D] text-white px-3 sm:px-4 py-2 rounded-lg hover:shadow-lg transition-all font-inter text-sm font-medium"
                       >
                         Pesan
                       </a>
@@ -186,12 +183,12 @@ export function MenuCarousel() {
         </div>
 
         {/* View All Button */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-6 sm:mt-10 lg:mt-12">
           <a
             href="https://wa.me/6281322227739"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border-2 border-[#E50A6D] text-[#E50A6D] px-8 py-3 rounded-full hover:bg-[#E50A6D] hover:text-white transition-all font-inter"
+            className="inline-block border-2 border-[#E50A6D] text-[#E50A6D] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-[#E50A6D] hover:text-white transition-all font-inter text-sm sm:text-base"
             style={{ fontWeight: 600 }}
           >
             Lihat Semua Menu
